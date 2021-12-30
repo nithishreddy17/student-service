@@ -22,5 +22,6 @@ public class StudentApp {
 		return new Docket(DocumentationType.SWAGGER_2).select()
 				.apis(RequestHandlerSelectors.basePackage("com.nithi.studentservice")).build();
 	}
-
+	// TODO - run the app in 8099 port
+	// default home page - swagger-ui.html
 }
