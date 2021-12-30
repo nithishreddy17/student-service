@@ -21,7 +21,7 @@ public class StudentService {
     public List<Student> getStudents(){
         return studentRepository.findAll();
     }
-   /* public List<Student> getStudentById(Long id){
+    /*public Optional<Student> getStudentById(Long id){
         return studentRepository.findById(id);
     }*/
 
