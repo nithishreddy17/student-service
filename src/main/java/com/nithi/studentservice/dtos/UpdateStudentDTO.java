@@ -1,21 +1,21 @@
-package com.nithi.studentservice.student;
+package com.nithi.studentservice.dtos;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.nithi.studentservice.student.Student;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.Period;
 
-public class CreateStudentDTO {
+public class UpdateStudentDTO {
     private String name;
     private String email;
     @JsonDeserialize
     private LocalDate dob;
 
-    public CreateStudentDTO() {
+    public UpdateStudentDTO() {
     }
 
-    public CreateStudentDTO(String name, String email, LocalDate dob) {
+    public UpdateStudentDTO(String name, String email, LocalDate dob) {
         this.name = name;
         this.email = email;
         this.dob = dob;
@@ -58,7 +58,7 @@ public class CreateStudentDTO {
                 '}';
     }
 
-    public static Student toStudent(CreateStudentDTO dto){
+    public static Student toStudent(UpdateStudentDTO dto){
         return new Student(dto.getName(), dto.getEmail(), dto.getDob());
     }
 }

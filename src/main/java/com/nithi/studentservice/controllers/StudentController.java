@@ -1,9 +1,8 @@
 package com.nithi.studentservice.controllers;
 
-import com.nithi.studentservice.student.CreateStudentDTO;
+import com.nithi.studentservice.dtos.CreateStudentDTO;
 import com.nithi.studentservice.student.Student;
-import com.nithi.studentservice.student.StudentService;
-import com.nithi.studentservice.student.UpdateStudentDTO;
+import com.nithi.studentservice.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

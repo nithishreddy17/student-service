@@ -1,12 +1,12 @@
-package com.nithi.studentservice.student;
+package com.nithi.studentservice.services;
 
+import com.nithi.studentservice.dtos.UpdateStudentDTO;
+import com.nithi.studentservice.student.Student;
+import com.nithi.studentservice.student.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.bind.annotation.PutMapping;
 
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 @Service
